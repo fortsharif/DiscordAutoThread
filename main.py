@@ -21,6 +21,7 @@ def main():
         new_thread = None
         global added_message
         guild = client.get_guild(202794531488268289)
+        console.log(message.author.name)
         author_role = guild.get_member(int(message.author.id)).roles
         user_roles = [role.name for role in author_role]
         text_channel = client.get_channel(int(os.environ.get('TEXT_CHANNEL')))
