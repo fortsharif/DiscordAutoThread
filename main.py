@@ -19,7 +19,7 @@ def main():
     @client.event 
     async def on_message(message):
         text_channel = client.get_channel(int(os.environ.get('TEXT_CHANNEL')))
-        if message.text_channel == text_channel:
+        if message.channel == text_channel:
             new_thread = None
             global added_message
             guild = client.get_guild(202794531488268289)
