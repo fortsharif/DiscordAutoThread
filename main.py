@@ -10,7 +10,7 @@ def main():
     global added_message 
     added_message = ''
 
-    required_roles = ['Bot Devs', 'Fantasy Football Helpers', 'Admin', 'Mods']
+    required_roles = ['Fantasy Football Helpers', 'Admin', 'Mods']
 
     client = commands.Bot(command_prefix='!' , intents = discord.Intents.all())
     
